@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor of Science in Business Administration (BSBA)</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set up the body as a flex container */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            border-bottom: 5px solid #ff7e5f;
+        }
+
+        /* Main content styling */
+        main {
+            flex: 1;
+            padding: 2rem;
+            background-color: #fff;
+            margin: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ff7e5f;
+        }
+
+        h1, h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .majors, .curriculum, .careers {
+            margin-bottom: 2rem;
+        }
+
+        .majors ul, .curriculum ul, .careers ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .majors li, .curriculum li, .careers li {
+            background-color: #f9f9f9;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border-left: 5px solid #ff7e5f;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .majors li:hover, .curriculum li:hover, .careers li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Back button styling */
+        .back-btn {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 10px 20px;
+            background-color: #ff7e5f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #e76f5b;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            main {
+                margin: 0.5rem;
+                padding: 1rem;
+            }
+
+            h1, h2 {
+                font-size: 1.5rem;
+            }
+
+            .majors li, .curriculum li, .careers li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bachelor of Science in Business Administration (BSBA)</h1>
+    <p>Your Pathway to a Successful Business Career</p>
+</header>
+
+<main>
+    <section class="majors">
+        <h2>Specializations Offered</h2>
+        <ul>
+            <li><strong>Entrepreneurship</strong> – Fosters creativity and innovation, equipping students to launch and manage sustainable businesses.</li>
+            <li><strong>Business Management</strong> – Prepares students for leadership roles by emphasizing strategic planning and organizational development.</li>
+            <li><strong>Marketing Management</strong> – Provides expertise in market analysis, brand management, and digital marketing strategies.</li>
+            <li><strong>Financial Management</strong> – Develops proficiency in financial planning, investment analysis, and risk management.</li>
+            <li><strong>Operations Management</strong> – Focuses on optimizing business processes and supply chain management.</li>
+            <li><strong>Human Resource Management</strong> – Equips students with skills to manage talent acquisition and employee relations.</li>
+            <li><strong>Business Economics</strong> – Combines economic theory with business practices to guide strategic decision-making.</li>
+            <li><strong>Business Accounting and Auditing</strong> – Develops expertise in financial reporting and auditing standards.</li>
+        </ul>
+    </section>
+
+    <section class="curriculum">
+        <h2>Sample Course Structure</h2>
+        <ul>
+            <li><strong>Year 1:</strong> Introduction to Business, Principles of Management, Financial Accounting</li>
+            <li><strong>Year 2:</strong> Business Communication, Marketing Principles, Microeconomics</li>
+            <li><strong>Year 3:</strong> Organizational Behavior, Business Ethics, Operations Management</li>
+            <li><strong>Year 4:</strong> Strategic Management, Business Policy, Capstone Project</li>
+        </ul>
+    </section>
+
+    <section class="careers">
+        <h2>Career Opportunities</h2>
+        <ul>
+            <li>Business Analyst</li>
+            <li>Marketing Manager</li>
+            <li>Financial Analyst</li>
+            <li>Human Resource Specialist</li>
+            <li>Operations Manager</li>
+            <li>Entrepreneur</li>
+        </ul>
+    </section>
+<a href="mains.html" class="back-btn">Back</a>
+</main>
+
+<footer>
+    <p>&copy; 2025 Your University Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

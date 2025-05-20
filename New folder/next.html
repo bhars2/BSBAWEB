@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BSBA Events Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: orange;
+      color: black;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin: 30px auto 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: orange;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Lightbox Overlay */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .gallery img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BSBA STUDENTS GALLERY</h1>
+</header>
+
+<main>
+  <section class="gallery">
+    <a href="#img1"><img src="image1.jpg" alt="BSBA Event 1"></a>
+    <a href="#img2"><img src="image2.jpg" alt="BSBA Event 2"></a>
+    <a href="#img3"><img src="image3.jpg" alt="BSBA Event 3"></a>
+    <a href="#img4"><img src="image4.jpg" alt="BSBA Event 4"></a>
+     <a href="#img5"><img src="image5.jpg" alt="BSBA Event 4"></a>
+      <a href="#img6"><img src="image6.jpg" alt="BSBA Event 4"></a>
+  </section>
+
+  <!-- Updated: Link back to the main page -->
+  <a href="mains.html" class="back-btn">Back</a>
+</main>
+
+<!-- Lightbox modals -->
+<div id="img1" class="lightbox" onclick="location.hash='';">
+  <img src="image1.jpg" alt="Zoomed BSBA Event 1">
+</div>
+<div id="img2" class="lightbox" onclick="location.hash='';">
+  <img src="image2.jpg" alt="Zoomed BSBA Event 2">
+</div>
+<div id="img3" class="lightbox" onclick="location.hash='';">
+  <img src="image3.jpg" alt="Zoomed BSBA Event 3">
+</div>
+<div id="img4" class="lightbox" onclick="location.hash='';">
+  <img src="image4.jpg" alt="Zoomed BSBA Event 4">
+</div>
+
+<footer>
+  <p>&copy; 2025 Southern Mindanao Institute of Technology</p>
+</footer>
+
+</body>
+</html>
